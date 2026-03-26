@@ -36,27 +36,51 @@
       </div>
     </section>
 
-    <div class="grid">
-      <section class="card col-6 reveal">
-        <h3>Email</h3>
-        <p class="mt-4">
-          <a href="mailto:adityaranjan2412@gmail.com" class="glow-text" style="font-size: 1.25rem;">adityaranjan2412@gmail.com</a>
+    <section class="contact-panel reveal">
+      <div class="contact-panel-left">
+        <h2>Contact Us</h2>
+        <p>
+          Not sure what you need? The team at Aditya Ranjan Portfolio will be happy
+          to listen and suggest ideas that fit your goals.
         </p>
-        <p class="mt-4" style="font-size: 0.875rem; color: var(--text-secondary);">Phone number intentionally omitted from the public portfolio.</p>
-      </section>
-
-      <section class="card col-6 reveal" style="transition-delay: 150ms;">
-        <h3>Profiles</h3>
-        <div class="mt-4" style="display: flex; flex-direction: column; gap: 1rem;">
-          <a href="https://www.linkedin.com/in/aditya-ranjan00/" target="_blank" rel="noopener noreferrer" class="read-more" style="justify-content: flex-start;">
-            LinkedIn: /in/aditya-ranjan00/ <span class="arrow">→</span>
-          </a>
-          <a href="https://github.com/Aditya-Ranjan23" target="_blank" rel="noopener noreferrer" class="read-more" style="justify-content: flex-start;">
-            GitHub: /Aditya-Ranjan23 <span class="arrow">→</span>
-          </a>
+        <div class="contact-meta">
+          <a href="mailto:adityaranjan2412@gmail.com">adityaranjan2412@gmail.com</a>
+          <a href="https://www.linkedin.com/in/aditya-ranjan00/" target="_blank" rel="noopener noreferrer">linkedin.com/in/aditya-ranjan00</a>
         </div>
-      </section>
-    </div>
+      </div>
+      <div class="contact-panel-right">
+        <h3>We'd love to hear from you!<br />Let's get in touch</h3>
+        <form class="contact-form" action="#" method="post">
+          <div class="contact-form-grid">
+            <label>
+              Full Name
+              <input type="text" name="full_name" placeholder="Your full name" />
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" placeholder="Company name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" placeholder="+91 00000 00000" />
+            </label>
+            <label class="full-width">
+              Address
+              <input type="text" name="address" placeholder="Your address" />
+            </label>
+            <label class="full-width">
+              Your Message
+              <textarea name="message" rows="4" placeholder="Type your message here"></textarea>
+            </label>
+          </div>
+          <button type="submit" class="contact-submit">Send Message</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="footer mt-12">
