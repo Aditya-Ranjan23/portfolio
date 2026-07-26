@@ -2,6 +2,8 @@
 
 This folder contains a simple static website for your portfolio (GitHub Pages friendly).
 
+https://aditya-ranjan23.github.io/portfolio/
+
 ## Pages
 - `index.html` — Home
 - `about.html` — About / Skills
