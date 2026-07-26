@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Aditya Ranjan</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+
+  <header class="topbar">
+    <div class="inner">
+      <a href="index.html" class="brand" aria-label="Home">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Aditya Ranjan</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main navigation" id="main-nav">
+        <a class="navlink" href="index.html">Home</a>
+        <a class="navlink" href="about.html">About</a>
+        <a class="navlink" href="case-studies.html">Case Studies</a>
+        <a class="navlink active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero reveal" style="min-height: 50vh;">
+      <div class="hero-content">
+        <h1 class="text-gradient">Contact</h1>
+        <p class="hero-desc mt-4">Reach out for data analyst roles, collaborations, or feedback on my projects.</p>
+      </div>
+    </section>
+
+    <section class="contact-panel reveal">
+      <div class="contact-panel-left">
+        <h2>Contact Us</h2>
+        <p>
+          Not sure what you need? The team at Aditya Ranjan Portfolio will be happy
+          to listen and suggest ideas that fit your goals.
+        </p>
+        <div class="contact-meta">
+          <a href="mailto:adityaranjan2412@gmail.com">adityaranjan2412@gmail.com</a>
+          <a href="https://www.linkedin.com/in/aditya-ranjan00/" target="_blank" rel="noopener noreferrer">linkedin.com/in/aditya-ranjan00</a>
+        </div>
+      </div>
+      <div class="contact-panel-right">
+        <h3>We'd love to hear from you!<br />Let's get in touch</h3>
+        <form class="contact-form" id="contact-form">
+          <div class="contact-form-grid">
+            <label>
+              Full Name
+              <input type="text" name="full_name" placeholder="Your full name" required />
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" placeholder="Company name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" placeholder="+91 00000 00000" />
+            </label>
+            <label class="full-width">
+              Address
+              <input type="text" name="address" placeholder="Your address" />
+            </label>
+            <label class="full-width">
+              Your Message
+              <textarea name="message" rows="4" placeholder="Type your message here" required></textarea>
+            </label>
+          </div>
+          <button type="submit" class="contact-submit">Send Message</button>
+        </form>
+        <!-- Toast notification -->
+        <div id="contact-toast" class="contact-toast" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mt-12">
+    <div class="wrap text-center">
+      <p>Data drives decisions. Let's connect.</p>
+      <div class="social-links mt-4">
+        <a href="https://github.com/Aditya-Ranjan23" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/aditya-ranjan00/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const data = new FormData(form);
+      const name = data.get('full_name').trim();
+      const email = data.get('email').trim();
+      const message = data.get('message').trim();
+
+      if (!name || !email || !message) {
+        showToast('Please fill in all required fields.', 'error');
+        return;
+      }
+
+      // Compose a mailto link so the message opens in the user's email client
+      const subject = encodeURIComponent('Portfolio Contact from ' + name);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Company: ' + (data.get('company') || '—') + '\n' +
+        'Email: ' + email + '\n' +
+        'Phone: ' + (data.get('phone') || '—') + '\n' +
+        'Address: ' + (data.get('address') || '—') + '\n\n' +
+        'Message:\n' + message
+      );
+
+      // Open mailto — silently succeeds even if no client is configured
+      window.location.href = 'mailto:adityaranjan2412@gmail.com?subject=' + subject + '&body=' + body;
+
+      showToast('Your message has been prepared! Your email client should open shortly.', 'success');
+      form.reset();
+    });
+
+    function showToast(msg, type) {
+      const toast = document.getElementById('contact-toast');
+      toast.textContent = msg;
+      toast.className = 'contact-toast ' + type + ' visible';
+      setTimeout(() => {
+        toast.classList.remove('visible');
+      }, 4500);
+    }
+  </script>
+</body>
+</html>

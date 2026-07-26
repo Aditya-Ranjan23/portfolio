@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Nexa-Analytics-AI",
+    "desc": null,
+    "lang": "Python",
+    "url": "https://github.com/Aditya-Ranjan23/Nexa-Analytics-AI"
+  },
+  {
+    "name": "E-Commerce-Sales-Analytics-SQL-Data-Warehouse-Power-BI-Dashboard",
+    "desc": null,
+    "lang": "TSQL",
+    "url": "https://github.com/Aditya-Ranjan23/E-Commerce-Sales-Analytics-SQL-Data-Warehouse-Power-BI-Dashboard"
+  },
+  {
+    "name": "portfolio",
+    "desc": null,
+    "lang": "HTML",
+    "url": "https://github.com/Aditya-Ranjan23/portfolio"
+  },
+  {
+    "name": "django-mini-projects",
+    "desc": null,
+    "lang": "Python",
+    "url": "https://github.com/Aditya-Ranjan23/django-mini-projects"
+  },
+  {
+    "name": "LogixOps",
+    "desc": null,
+    "lang": "JavaScript",
+    "url": "https://github.com/Aditya-Ranjan23/LogixOps"
+  },
+  {
+    "name": "Intelligent-IT-Ticketing",
+    "desc": null,
+    "lang": "TypeScript",
+    "url": "https://github.com/Aditya-Ranjan23/Intelligent-IT-Ticketing"
+  },
+  {
+    "name": "LightVerse",
+    "desc": "LightVerse is a web-based platform for reading light novels online. It allows users to browse novels by category, search titles, and bookmark favorites. The interface is clean, responsive, and includes dark/light reading modes for better user experience. Designed for both desktop and mobile users, the site focuses on ease of access and readability",
+    "lang": "HTML",
+    "url": "https://github.com/Aditya-Ranjan23/LightVerse"
+  },
+  {
+    "name": "Sugar-Consumption-Analysis",
+    "desc": "Global Sugar Consumption Trends (1960\u20132023) is a data analysis project using Microsoft Excel to explore worldwide sugar consumption patterns. It covers global and regional trends, per capita usage, health impacts, and forecasts based on historical data. The project features an interactive Excel dashboard",
+    "lang": null,
+    "url": "https://github.com/Aditya-Ranjan23/Sugar-Consumption-Analysis"
+  },
+  {
+    "name": "Breathe-India-A-Data-Driven-Exploration-of-Air-Quality-Patterns",
+    "desc": "Analyzed India\u2019s air quality data using Python to uncover pollution trends across metro cities and states. Focused on pollutant levels, visualized key patterns using Seaborn & Matplotlib, and improved data cleaning and analytical skills using Pandas and NumPy. A great hands-on experience in turning raw environmental data into actionable insights!",
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/Aditya-Ranjan23/Breathe-India-A-Data-Driven-Exploration-of-Air-Quality-Patterns"
+  },
+  {
+    "name": "Blockchain-Network-Analytics-Platform-with-Predictive-Insights",
+    "desc": null,
+    "lang": "HTML",
+    "url": "https://github.com/Aditya-Ranjan23/Blockchain-Network-Analytics-Platform-with-Predictive-Insights"
+  },
+  {
+    "name": "ticketing",
+    "desc": null,
+    "lang": "Python",
+    "url": "https://github.com/Aditya-Ranjan23/ticketing"
+  },
+  {
+    "name": "Customer-Churn-Analysis-Dashboard-using-Power-BI",
+    "desc": null,
+    "lang": null,
+    "url": "https://github.com/Aditya-Ranjan23/Customer-Churn-Analysis-Dashboard-using-Power-BI"
+  }
+]
